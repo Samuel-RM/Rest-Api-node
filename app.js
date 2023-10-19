@@ -4,6 +4,7 @@ const cors = require('cors')
 
 const movies = require('./movies.json')
 const { validateMovie, validatePartialMovie } = require('./Schemas/movies')
+const { log } = require('node:console')
 
 const app = express()
 app.use(express.json())
@@ -116,4 +117,5 @@ const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
   console.log(`server listening on port http://localhost:${PORT}`)
+  console.log(`server on port ${PORT}`);
 })
