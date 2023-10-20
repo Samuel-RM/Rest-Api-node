@@ -117,5 +117,6 @@ const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
   console.log(`server listening on port http://localhost:${PORT}`)
-  console.log(`server on port ${PORT}`);
+  console.log(`server on port ${PORT}`)
+  console.log(`https://{${app-name}}-${unique-identifier}}-${{environment}}.fl0.io`);
 })
